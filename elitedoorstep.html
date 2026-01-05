@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doorstep Fitness Kenya | Elite Athletic Coaching & Wellness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .orange-glow:hover {
+            box-shadow: 0 0 20px rgba(249, 115, 22, 0.4);
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 100;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-800 tracking-tighter text-orange-600">DOORSTEP<span class="text-black">FITNESS</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-semibold">
+                    <a href="#home" class="hover:text-orange-600 transition">Home</a>
+                    <a href="#services" class="hover:text-orange-600 transition">Services</a>
+                    <a href="#empowerment" class="hover:text-orange-600 transition">Empowerment</a>
+                    <a href="#support" class="hover:text-orange-600 transition">Support Us</a>
+                </div>
+                <div>
+                    <a href="#booking" class="bg-orange-600 text-white px-6 py-3 rounded-full font-bold hover:bg-orange-700 transition">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient h-screen flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-800 mb-6 leading-tight">Professional Coaching Brought to Your <span class="text-orange-500">Doorstep.</span></h1>
+            <p class="text-xl md:text-2xl mb-10 text-gray-200">Elite athletic training, wellness consultations, and fitness empowerment tailored to your lifestyle in Kenya.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#booking" class="bg-orange-600 text-white px-10 py-4 rounded-full text-lg font-bold orange-glow transition">Start Training</a>
+                <a href="#services" class="bg-white/10 backdrop-blur-md border border-white/30 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-white/20 transition">Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <p class="text-4xl font-bold text-orange-600">500+</p>
+                <p class="text-gray-600 font-medium">Clients Trained</p>
+            </div>
+            <div>
+                <p class="text-4xl font-bold text-orange-600">10+</p>
+                <p class="text-gray-600 font-medium">Pro Athletes</p>
+            </div>
+            <div>
+                <p class="text-4xl font-bold text-orange-600">100%</p>
+                <p class="text-gray-600 font-medium">Mobile Service</p>
+            </div>
+            <div>
+                <p class="text-4xl font-bold text-orange-600">24/7</p>
+                <p class="text-gray-600 font-medium">Support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-800 mb-4">Our Practical Solutions</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We provide more than just workouts. We provide a lifestyle transformation designed to fit your busy schedule.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-3xl hover:-translate-y-2 transition duration-300">
+                    <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-running text-2xl text-orange-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Athletic Performance</h3>
+                    <p class="text-gray-600 mb-6">Specialized drills for pro athletes and aspiring stars. Speed, agility, and explosive power training at your preferred location.</p>
+                    <ul class="text-sm space-y-2 text-gray-500 mb-8">
+                        <li><i class="fas fa-check text-orange-500 mr-2"></i> Custom Drill Sequences</li>
+                        <li><i class="fas fa-check text-orange-500 mr-2"></i> Performance Video Analysis</li>
+                        <li><i class="fas fa-check text-orange-500 mr-2"></i> Competition Preparation</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-3xl hover:-translate-y-2 transition duration-300 shadow-xl border-orange-200 border">
+                    <div class="w-16 h-16 bg-orange-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-apple-alt text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Wellness & Nutrition</h3>
+                    <p class="text-gray-600 mb-6">Full lifestyle audit and consultation. We focus on sustainable weight management and mental wellness.</p>
+                    <ul class="text-sm space-y-2 text-gray-500 mb-8">
+                        <li><i class="fas fa-check text-orange-500 mr-2"></i> Meal Planning (Local Foods)</li>
+                        <li><i class="fas fa-check text-orange-500 mr-2"></i> Stress Management</li>
+                        <li><i class="fas fa-check text-orange-500 mr-2"></i> 1-on-1 Consultation</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-3xl hover:-translate-y-2 transition duration-300">
+                    <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-2xl text-orange-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Empowerment Talks</h3>
+                    <p class="text-gray-600 mb-6">Motivational sessions and fitness education for corporate teams, schools, and local communities.</p>
+                    <ul class="text-sm space-y-2 text-gray-500 mb-8">
+                        <li><i class="fas fa-check text-orange-500 mr-2"></i> Group Workshops</li>
+                        <li><i class="fas fa-check text-orange-500 mr-2"></i> Mental Toughness Training</li>
+                        <li><i class="fas fa-check text-orange-500 mr-2"></i> Youth Mentorship</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking / Management Section -->
+    <section id="booking" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-800 mb-6 leading-tight text-gray-900">Manage Your Fitness Journey with Ease</h2>
+                    <p class="text-lg text-gray-600 mb-8">Skip the back-and-forth phone calls. View my real-time availability and secure your slot in seconds. My system automates your reminders and progress tracking.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="mt-1 bg-orange-100 p-2 rounded-lg"><i class="fas fa-calendar-alt text-orange-600"></i></div>
+                            <div class="ml-4">
+                                <h4 class="font-bold">Real-time Scheduling</h4>
+                                <p class="text-sm text-gray-500">Pick the time that works for you, and it syncs to my calendar instantly.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="mt-1 bg-orange-100 p-2 rounded-lg"><i class="fas fa-mobile-alt text-orange-600"></i></div>
+                            <div class="ml-4">
+                                <h4 class="font-bold">M-Pesa Integrated</h4>
+                                <p class="text-sm text-gray-500">Fast, secure local payments for sessions and consultations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 w-full">
+                    <div class="bg-gray-50 p-8 rounded-3xl border border-gray-200 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6">Quick Booking Form</h3>
+                        <form id="booking-form" class="space-y-4">
+                            <div class="grid grid-cols-2 gap-4">
+                                <input type="text" placeholder="Full Name" class="p-4 rounded-xl border border-gray-300 focus:outline-orange-500" required>
+                                <input type="tel" placeholder="Phone (e.g. 07...)" class="p-4 rounded-xl border border-gray-300 focus:outline-orange-500" required>
+                            </div>
+                            <select class="w-full p-4 rounded-xl border border-gray-300 focus:outline-orange-500">
+                                <option>Select Service</option>
+                                <option>Athletic Training</option>
+                                <option>Wellness Consultation</option>
+                                <option>Home Personal Training</option>
+                            </select>
+                            <input type="date" class="w-full p-4 rounded-xl border border-gray-300 focus:outline-orange-500">
+                            <button type="submit" class="w-full bg-black text-white py-4 rounded-xl font-bold hover:bg-orange-600 transition">Check Availability</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support" class="py-24 bg-orange-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-800 mb-6">Fuel The Movement</h2>
+            <p class="text-xl mb-10 opacity-90">Support Doorstep Fitness Kenya in our mission to bring professional coaching to underprivileged communities and foster local talent. Your support helps us provide gear and training to those who need it most.</p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="bg-white text-black p-6 rounded-2xl w-full sm:w-auto">
+                    <p class="text-sm font-bold uppercase tracking-widest mb-2">M-Pesa Send Money, NIMROD NDIEMA</p>
+                    <p class="text-3xl font-black">+254759500240</p>
+                </div>
+                <button class="bg-black text-white px-10 py-4 rounded-2xl font-bold hover:bg-gray-800 transition">Support via PayPal</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-2">
+                    <span class="text-3xl font-800 tracking-tighter text-orange-500">DOORSTEP<span class="text-white">FITNESS</span></span>
+                    <p class="mt-6 text-gray-400 max-w-md">The most practical and professional mobile coaching service in Kenya. We come to your home, office, or local park to help you reach your peak performance.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Navigation</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="#home" class="hover:text-orange-500">Home</a></li>
+                        <li><a href="#services" class="hover:text-orange-500">Services</a></li>
+                        <li><a href="#booking" class="hover:text-orange-500">Book Session</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Connect</h4>
+                    <div class="flex space-x-4 text-2xl">
+                        <a href="#" class="text-gray-400 hover:text-orange-500"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-orange-500"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-orange-500"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2024 Doorstep Fitness Kenya. Empowering athletes across the nation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/254759500240" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Simple form handling
+        document.getElementById('booking-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const modal = document.createElement('div');
+            modal.innerHTML = `
+                <div class="fixed inset-0 bg-black/50 backdrop-blur flex items-center justify-center z-[100] px-4">
+                    <div class="bg-white p-8 rounded-3xl max-w-sm w-full text-center">
+                        <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-check text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Request Sent!</h3>
+                        <p class="text-gray-600 mb-6">I will review your request and contact you via WhatsApp to confirm the time.</p>
+                        <button onclick="this.parentElement.parentElement.remove()" class="w-full bg-black text-white py-3 rounded-xl font-bold">Great, Thanks!</button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        });
+    </script>
+
+</body>
+</html>
